@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  javascript:
+    name: JavaScript
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Parse every module
+        run: |
+          fail=0
+          while IFS= read -r f; do
+            node --input-type=module --check < "$f" || { echo "syntax: $f"; fail=1; }
+          done < <(find app site -name '*.js')
+          exit $fail
+
+      - name: Translation files are valid and aligned
+        run: |
+          node -e '
+            const fs = require("fs");
+            const es = JSON.parse(fs.readFileSync("app/js/i18n/es.json"));
+            const en = JSON.parse(fs.readFileSync("app/js/i18n/en.json"));
+            const missing = Object.keys(es).filter(k => !(k in en))
+              .concat(Object.keys(en).filter(k => !(k in es)));
+            if (missing.length) {
+              console.error("keys present in only one locale:", missing.slice(0, 20));
+              process.exit(1);
+            }
+            console.log(Object.keys(es).length + " keys, both locales aligned");
+          '
+
+  hygiene:
+    name: Hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Real config is not committed
+        run: |
+          if git ls-files | grep -q '^app/config/env\.js$'; then
+            echo "::error::app/config/env.js must stay local"
+            exit 1
+          fi
+          test -f app/config/env.example.js
+
+      - name: No project identifiers or secrets in the tree
+        run: |
+          if grep -rniE 'sb_(secret|service)|service_role|eyJ[A-Za-z0-9_-]{30,}' \
+               --exclude-dir=.git --exclude=ci.yml . ; then
+            echo "::error::possible secret committed"
+            exit 1
+          fi
+          echo "clean"
+
+  sql:
+    name: SQL
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: ci
+        options: >-
+          --health-cmd pg_isready --health-interval 10s
+          --health-timeout 5s --health-retries 5
+        ports: ['5432:5432']
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Every table declared has RLS enabled
+        run: |
+          created=$(grep -rhoiE 'create table (if not exists )?(public\.)?[a-z_]+' \
+                    supabase/migrations/ | grep -oiE '[a-z_]+$' | sort -u)
+          for t in $created; do
+            if ! grep -rqiE "(alter table (public\.)?$t enable row level security|'$t')" \
+                   supabase/migrations/; then
+              echo "::error::no RLS found for table: $t"
+              exit 1
+            fi
+          done
+          echo "$(echo "$created" | wc -l) tables, all covered"
