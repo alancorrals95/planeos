@@ -25,6 +25,24 @@ live meetings and time tracking — in one bilingual app with no build step.**
 
 Bilingual (Spanish/English) throughout, light and dark themes, responsive.
 
+## Screenshots
+
+![Hero](docs/img/hero.png)
+
+| | |
+|---|---|
+| ![Features](docs/img/features.png) | ![Pricing](docs/img/pricing.png) |
+| Nine modules, one place. | Plan comparison, monthly or annual. |
+
+![Login](docs/img/login.png)
+
+Dark and light themes throughout, Spanish and English, all without a build step.
+
+> These are the marketing site and the authentication screens. The application
+> interior is not shown here because the Supabase project it was developed
+> against no longer exists — point `env.js` at a new project and run
+> `supabase/full_schema.sql` to bring it up.
+
 ## Architecture
 
 **No framework and no build step.** ES modules served directly, a Supabase project
