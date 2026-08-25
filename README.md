@@ -5,6 +5,7 @@ live meetings and time tracking — in one bilingual app with no build step.**
 
 [English](README.md) · [Español](README.es.md)
 
+[![CI](https://github.com/alancorrals95/planeos/actions/workflows/ci.yml/badge.svg)](https://github.com/alancorrals95/planeos/actions/workflows/ci.yml)
 ![vanilla](https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?logo=javascript&logoColor=black)
 ![supabase](https://img.shields.io/badge/Supabase-Postgres%20%2B%20RLS-3FCF8E?logo=supabase&logoColor=white)
 ![build](https://img.shields.io/badge/build%20step-none-lightgrey)
