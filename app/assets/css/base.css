@@ -1,0 +1,55 @@
+/* PlanEOS · base.css — reset + typography + element defaults */
+
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-normal);
+  color: var(--text-primary);
+  background: var(--bg-app);
+  font-feature-settings: "cv11", "ss01";
+  font-variant-numeric: tabular-nums;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100dvh;
+}
+
+h1,h2,h3,h4 { font-weight: var(--fw-semibold); letter-spacing: var(--tracking-tight); line-height: var(--leading-tight); }
+h1 { font-size: var(--text-2xl); }
+h2 { font-size: var(--text-xl); }
+h3 { font-size: var(--text-lg); }
+
+a { color: var(--accent-text); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: none; }
+
+img, svg { display: block; max-width: 100%; }
+ul, ol { list-style: none; }
+
+:focus-visible { outline: none; }
+::placeholder { color: var(--text-tertiary); }
+
+/* Scrollbars */
+* { scrollbar-width: thin; scrollbar-color: var(--border-strong) transparent; }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 999px; border: 3px solid transparent; background-clip: padding-box; }
+*::-webkit-scrollbar-thumb:hover { background: var(--text-tertiary); background-clip: padding-box; }
+
+.icon { width: 16px; height: 16px; stroke-width: 1.75; stroke: currentColor; fill: none; flex: none; vertical-align: -.15em; }
+
+/* utilities */
+.muted { color: var(--text-tertiary); }
+.mono { font-family: var(--font-mono); }
+.row { display: flex; align-items: center; }
+.gap-1 { gap: var(--space-1); } .gap-2 { gap: var(--space-2); } .gap-3 { gap: var(--space-3); } .gap-4 { gap: var(--space-4); }
+.hidden { display: none !important; }
+.spacer { flex: 1; }
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.stack { display: flex; flex-direction: column; }

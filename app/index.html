@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PlanEOS</title>
+  <script src="assets/errbox.js"></script>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+  <script type="module">
+    import { getSession } from './js/core/auth.js';
+    const s = await getSession();
+    location.replace(s ? 'pages/dashboard/index.html' : 'pages/auth/login.html');
+  </script>
+</body>
+</html>

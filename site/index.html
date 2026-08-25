@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PlanEOS — El sistema operativo para tu empresa</title>
+  <meta name="description" content="PlanEOS reúne EOS, CRM, chat, reuniones en vivo y time tracking en una sola app minimalista para operar tu empresa.">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav"><div class="wrap nav__inner">
+    <a class="brand" href="/planeos/site/"><span class="brand__mark">P</span> PlanEOS</a>
+    <nav class="nav__links">
+      <a href="#features">Producto</a>
+      <a href="#pricing">Precios</a>
+      <a href="pricing.html">Planes</a>
+    </nav>
+    <div class="nav__cta">
+      <a class="btn btn--ghost btn--sm" href="/planeos/app/pages/auth/login.html">Iniciar sesión</a>
+      <a class="btn btn--primary btn--sm" href="/planeos/app/pages/auth/signup.html">Empezar gratis</a>
+    </div>
+  </div></header>
+
+  <!-- HERO -->
+  <section class="hero"><div class="wrap">
+    <span class="pill">✦ Nuevo · EOS + CRM + Chat + Time Tracking</span>
+    <h1>El sistema operativo para dirigir tu empresa.</h1>
+    <p>Rocas, scorecard, tareas, reuniones en vivo, CRM, chat de equipo y time tracking — todo en una app fina y minimalista. Reemplaza 6 herramientas por una.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary btn--lg" href="/planeos/app/pages/auth/signup.html">Crear cuenta gratis</a>
+      <a class="btn btn--secondary btn--lg" href="#features">Ver funciones</a>
+    </div>
+    <div class="hero__shot">
+      <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <div class="body">
+        <div class="side"><div class="row on"></div><div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div></div>
+        <div class="main"><div class="card"></div><div class="card"></div><div class="card"></div><div class="card"></div><div class="card"></div><div class="card"></div></div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- FEATURES -->
+  <section id="features"><div class="wrap">
+    <p class="eyebrow">Una plataforma</p>
+    <h2 class="section-title">Todo lo que tu equipo necesita para ejecutar</h2>
+    <p class="section-sub">Inspirado en EOS y potenciado con CRM y colaboración en tiempo real.</p>
+    <div class="features">
+      <div class="feature"><div class="feature__ic">◎</div><h3>Rocas & Metas</h3><p>Objetivos trimestrales con hitos, responsables y progreso visual.</p></div>
+      <div class="feature"><div class="feature__ic">▤</div><h3>Scorecard / Datos</h3><p>KPIs semanales con metas y celdas verde/rojo. Mide lo que importa.</p></div>
+      <div class="feature"><div class="feature__ic">✓</div><h3>Tareas</h3><p>To-Dos de equipo y privadas, con fechas y seguimiento en tiempo real.</p></div>
+      <div class="feature"><div class="feature__ic">▦</div><h3>Reuniones en vivo</h3><p>Agenda colaborativa que todos siguen juntos, estilo Level 10.</p></div>
+      <div class="feature"><div class="feature__ic">▧</div><h3>Chat de equipo</h3><p>Canales y mensajes directos en tiempo real, estilo Slack.</p></div>
+      <div class="feature"><div class="feature__ic">⊞</div><h3>CRM</h3><p>Contactos, empresas y pipeline de ventas con tablero kanban.</p></div>
+      <div class="feature"><div class="feature__ic">◔</div><h3>Time Tracking</h3><p>Cronómetro por proyecto y reportes facturables, estilo Toggl.</p></div>
+      <div class="feature"><div class="feature__ic">⚑</div><h3>Temas & Ideas (IDS)</h3><p>Identifica, discute y resuelve los temas del equipo.</p></div>
+      <div class="feature"><div class="feature__ic">◍</div><h3>Multi-equipo & Roles</h3><p>Varias organizaciones, permisos y seguridad a nivel de fila.</p></div>
+    </div>
+  </div></section>
+
+  <!-- PRICING -->
+  <section id="pricing" style="background:var(--subtle)"><div class="wrap">
+    <p class="eyebrow">Precios simples</p>
+    <h2 class="section-title">Empieza gratis. Escala cuando estés listo.</h2>
+    <p class="section-sub">Sin tarjeta para empezar. Cambia de plan cuando quieras.</p>
+    <div style="text-align:center">
+      <div class="toggle">
+        <button id="t-month" class="on" onclick="setCycle('month')">Mensual</button>
+        <button id="t-year" onclick="setCycle('year')">Anual · ahorra 17%</button>
+      </div>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="price">$0</div>
+        <div style="color:var(--text-3);font-size:13px">para siempre</div>
+        <ul>
+          <li>✓ Hasta 5 miembros</li>
+          <li>✓ Dashboard, Tareas, Rocas</li>
+          <li>✓ Scorecard y Chat básicos</li>
+          <li>✓ 1 organización</li>
+        </ul>
+        <a class="btn btn--secondary" style="width:100%;justify-content:center" href="/planeos/app/pages/auth/signup.html">Empezar gratis</a>
+      </div>
+      <div class="plan plan--pro">
+        <span class="plan__tag">Más popular</span>
+        <h3>Pro</h3>
+        <div class="price"><span id="price">$19</span><span> / usuario / mes</span></div>
+        <div id="price-note" style="color:var(--text-3);font-size:13px">facturado mensualmente</div>
+        <ul>
+          <li>✓ Miembros ilimitados</li>
+          <li>✓ Reuniones en vivo, CRM completo</li>
+          <li>✓ Time Tracking + reportes</li>
+          <li>✓ Historial ilimitado e integraciones</li>
+          <li>✓ 14 días de prueba, sin tarjeta</li>
+        </ul>
+        <a class="btn btn--primary" style="width:100%;justify-content:center" href="/planeos/app/pages/auth/signup.html">Probar Pro gratis</a>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- CTA -->
+  <section><div class="wrap"><div class="cta">
+    <h2>Dirige tu empresa con claridad.</h2>
+    <p>Únete a los equipos que operan mejor con PlanEOS.</p>
+    <a class="btn btn--primary btn--lg" href="/planeos/app/pages/auth/signup.html">Crear cuenta gratis</a>
+  </div></div></section>
+
+  <footer><div class="wrap footer__inner">
+    <div class="brand"><span class="brand__mark">P</span> PlanEOS</div>
+    <div>© 2026 PlanEOS · planeos.io</div>
+  </div></footer>
+
+  <script>
+    function setCycle(c) {
+      document.getElementById('t-month').classList.toggle('on', c === 'month');
+      document.getElementById('t-year').classList.toggle('on', c === 'year');
+      document.getElementById('price').textContent = c === 'year' ? '$15.83' : '$19';
+      document.getElementById('price-note').textContent = c === 'year' ? 'facturado anualmente ($190/año)' : 'facturado mensualmente';
+    }
+  </script>
+</body>
+</html>

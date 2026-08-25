@@ -1,0 +1,93 @@
+{
+  "app": { "name": "PlanEOS" },
+  "nav": {
+    "workspace": "Espacio",
+    "dashboard": "Mi PlanEOS",
+    "data": "Datos",
+    "rocks": "Rocas",
+    "todos": "Tareas",
+    "boards": "Boards",
+    "issues": "Temas/Ideas",
+    "meetings": "Reuniones",
+    "headlines": "Anuncios",
+    "chat": "Chat",
+    "crm": "CRM",
+    "time": "Time Tracking",
+    "vision": "Visión",
+    "orgchart": "Organigrama",
+    "oneonone": "1-a-1",
+    "directory": "Directorio",
+    "knowledge": "Conocimiento",
+    "team": "Equipo",
+    "company": "Empresa",
+    "settings": "Ajustes",
+    "members": "Miembros",
+    "billing": "Facturación",
+    "profile": "Perfil",
+    "more": "Más"
+  },
+  "common": {
+    "create": "Crear", "save": "Guardar", "cancel": "Cancelar", "delete": "Eliminar",
+    "edit": "Editar", "add": "Agregar", "search": "Buscar", "loading": "Cargando…",
+    "signout": "Cerrar sesión", "invite": "Invitar", "close": "Cerrar", "back": "Atrás",
+    "owner": "Responsable", "due": "Vence", "status": "Estado", "title": "Título",
+    "none": "Ninguno", "all": "Todos", "today": "Hoy", "yesterday": "Ayer",
+    "confirm_delete": "¿Seguro que quieres eliminar esto?",
+    "convert_to_task": "Convertir a tarea", "related": "Relacionados",
+    "add_link": "Relacionar", "subtasks": "Subtareas"
+  },
+  "boards": {
+    "new_board": "Nuevo board", "add_column": "Agregar columna",
+    "column_name": "Nombre de la columna", "is_done": "Es columna de completado (Done)"
+  },
+  "auth": {
+    "login": "Iniciar sesión", "signup": "Crear cuenta",
+    "welcome": "Bienvenido de nuevo", "welcome_sub": "Entra a tu espacio de PlanEOS",
+    "create_account": "Crea tu cuenta", "create_sub": "Empieza a operar con PlanEOS",
+    "email": "Correo", "password": "Contraseña", "name": "Nombre completo",
+    "no_account": "¿No tienes cuenta?", "have_account": "¿Ya tienes cuenta?",
+    "forgot": "¿Olvidaste tu contraseña?", "reset": "Restablecer contraseña",
+    "or": "o", "create_org": "Crea tu organización",
+    "org_name": "Nombre de la organización", "org_sub": "Este es el espacio de tu empresa",
+    "continue": "Continuar", "check_email": "Revisa tu correo para confirmar tu cuenta."
+  },
+  "dashboard": {
+    "greeting_morning": "Buenos días", "greeting_afternoon": "Buenas tardes", "greeting_evening": "Buenas noches",
+    "my_rocks": "Mis Rocas", "team_todos": "Tareas del equipo", "my_todos": "Mis Tareas",
+    "scorecard": "Scorecard", "headlines": "Anuncios", "issues": "Temas"
+  },
+  "todos": {
+    "title": "Tareas", "sub": "Crea, asigna y da seguimiento a tareas clave.",
+    "team": "Equipo", "private": "Privadas", "new": "Nueva tarea", "overdue": "Vencidas",
+    "this_week": "Esta semana", "later": "Después", "completed": "Completadas",
+    "placeholder": "¿Qué hay que hacer?", "empty": "Aún no hay tareas",
+    "empty_desc": "Crea tu primera tarea para empezar."
+  },
+  "rocks": {
+    "title": "Rocas", "sub": "Define y da seguimiento a metas trimestrales.",
+    "new": "Nueva Roca", "on_track": "En camino", "off_track": "Fuera de ruta",
+    "complete": "Completada", "milestones": "Hitos", "company": "Rocas de la empresa",
+    "empty": "No hay rocas este trimestre", "empty_desc": "Agrega una meta trimestral para empezar."
+  },
+  "scorecard": {
+    "title": "Datos", "sub": "Registra y evalúa métricas clave para el éxito.",
+    "new_kpi": "Nuevo KPI", "goal": "Meta", "average": "Promedio", "total": "Total",
+    "weekly": "Semanal", "monthly": "Mensual", "quarterly": "Trimestral", "annual": "Anual",
+    "empty": "Aún no hay KPIs", "empty_desc": "Agrega tu primera métrica al scorecard."
+  },
+  "chat": {
+    "channels": "Canales", "dms": "Mensajes directos", "new_channel": "Nuevo canal",
+    "message": "Mensaje", "no_channel": "Selecciona un canal", "no_channel_desc": "Elige un canal para empezar a chatear.",
+    "channel_name": "Nombre del canal", "members": "miembros"
+  },
+  "members": {
+    "title": "Miembros", "sub": "Invita a tu equipo y gestiona roles.",
+    "invite": "Invitar miembro", "role": "Rol", "pending": "Invitaciones pendientes",
+    "invite_sent": "Invitación creada — comparte el enlace.", "copy_link": "Copiar enlace"
+  },
+  "settings": { "title": "Ajustes", "org": "Organización", "org_name": "Nombre de la organización", "theme": "Tema", "language": "Idioma", "saved": "Guardado" },
+  "billing": {
+    "title": "Facturación", "free": "Free", "pro": "Pro", "current": "Plan actual",
+    "upgrade": "Mejorar a Pro", "per_seat": "por usuario / mes", "manage": "Gestionar facturación"
+  }
+}

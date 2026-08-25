@@ -1,0 +1,93 @@
+{
+  "app": { "name": "PlanEOS" },
+  "nav": {
+    "workspace": "Workspace",
+    "dashboard": "My PlanEOS",
+    "data": "Data",
+    "rocks": "Rocks",
+    "todos": "To-Dos",
+    "boards": "Boards",
+    "issues": "Issues/Ideas",
+    "meetings": "Meetings",
+    "headlines": "Headlines",
+    "chat": "Chat",
+    "crm": "CRM",
+    "time": "Time Tracking",
+    "vision": "Vision",
+    "orgchart": "Org Chart",
+    "oneonone": "1-on-1",
+    "directory": "Directory",
+    "knowledge": "Knowledge",
+    "team": "Team",
+    "company": "Company",
+    "settings": "Settings",
+    "members": "Members",
+    "billing": "Billing",
+    "profile": "Profile",
+    "more": "More"
+  },
+  "common": {
+    "create": "Create", "save": "Save", "cancel": "Cancel", "delete": "Delete",
+    "edit": "Edit", "add": "Add", "search": "Search", "loading": "Loading…",
+    "signout": "Sign out", "invite": "Invite", "close": "Close", "back": "Back",
+    "owner": "Owner", "due": "Due", "status": "Status", "title": "Title",
+    "none": "None", "all": "All", "today": "Today", "yesterday": "Yesterday",
+    "confirm_delete": "Are you sure you want to delete this?",
+    "convert_to_task": "Convert to task", "related": "Related",
+    "add_link": "Link", "subtasks": "Subtasks"
+  },
+  "boards": {
+    "new_board": "New board", "add_column": "Add column",
+    "column_name": "Column name", "is_done": "This is a Done column"
+  },
+  "auth": {
+    "login": "Log in", "signup": "Sign up",
+    "welcome": "Welcome back", "welcome_sub": "Log in to your PlanEOS workspace",
+    "create_account": "Create your account", "create_sub": "Start running on PlanEOS",
+    "email": "Email", "password": "Password", "name": "Full name",
+    "no_account": "Don't have an account?", "have_account": "Already have an account?",
+    "forgot": "Forgot password?", "reset": "Reset password",
+    "or": "or", "create_org": "Create your organization",
+    "org_name": "Organization name", "org_sub": "This is your company workspace",
+    "continue": "Continue", "check_email": "Check your email to confirm your account."
+  },
+  "dashboard": {
+    "greeting_morning": "Good morning", "greeting_afternoon": "Good afternoon", "greeting_evening": "Good evening",
+    "my_rocks": "My Rocks", "team_todos": "Team To-Dos", "my_todos": "My To-Dos",
+    "scorecard": "Scorecard", "headlines": "Headlines", "issues": "Issues"
+  },
+  "todos": {
+    "title": "To-Dos", "sub": "Create, assign, and track deadlines for critical tasks.",
+    "team": "Team", "private": "Private", "new": "New To-Do", "overdue": "Overdue",
+    "this_week": "This week", "later": "Later", "completed": "Completed",
+    "placeholder": "What needs to get done?", "empty": "No to-dos yet",
+    "empty_desc": "Create your first to-do to get started."
+  },
+  "rocks": {
+    "title": "Rocks", "sub": "Set and track quarterly goals to hit your targets.",
+    "new": "New Rock", "on_track": "On-track", "off_track": "Off-track",
+    "complete": "Complete", "milestones": "Milestones", "company": "Company Rocks",
+    "empty": "No rocks this quarter", "empty_desc": "Add a quarterly goal to get started."
+  },
+  "scorecard": {
+    "title": "Data", "sub": "Record and evaluate key metrics, streamlined for success.",
+    "new_kpi": "New KPI", "goal": "Goal", "average": "Average", "total": "Total",
+    "weekly": "Weekly", "monthly": "Monthly", "quarterly": "Quarterly", "annual": "Annual",
+    "empty": "No KPIs yet", "empty_desc": "Add your first metric to build the scorecard."
+  },
+  "chat": {
+    "channels": "Channels", "dms": "Direct Messages", "new_channel": "New channel",
+    "message": "Message", "no_channel": "Select a channel", "no_channel_desc": "Choose a channel to start chatting.",
+    "channel_name": "Channel name", "members": "members"
+  },
+  "members": {
+    "title": "Members", "sub": "Invite teammates and manage roles.",
+    "invite": "Invite member", "role": "Role", "pending": "Pending invites",
+    "invite_sent": "Invite created — share the link.", "copy_link": "Copy link"
+  },
+  "settings": { "title": "Settings", "org": "Organization", "org_name": "Organization name", "theme": "Theme", "language": "Language", "saved": "Saved" },
+  "billing": {
+    "title": "Billing", "free": "Free", "pro": "Pro", "current": "Current plan",
+    "upgrade": "Upgrade to Pro", "per_seat": "per user / month", "manage": "Manage billing"
+  }
+}

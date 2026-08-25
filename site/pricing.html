@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PlanEOS — Precios</title>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="nav"><div class="wrap nav__inner">
+    <a class="brand" href="index.html"><span class="brand__mark">P</span> PlanEOS</a>
+    <nav class="nav__links"><a href="index.html#features">Producto</a><a href="pricing.html">Precios</a></nav>
+    <div class="nav__cta">
+      <a class="btn btn--ghost btn--sm" href="/planeos/app/pages/auth/login.html">Iniciar sesión</a>
+      <a class="btn btn--primary btn--sm" href="/planeos/app/pages/auth/signup.html">Empezar gratis</a>
+    </div>
+  </div></header>
+
+  <section class="hero" style="padding:64px 0 24px"><div class="wrap">
+    <h1 style="font-size:clamp(30px,5vw,46px)">Precios simples y transparentes</h1>
+    <p>Free para siempre. Pro a $19 por usuario al mes (o $15.83 anual).</p>
+  </div></section>
+
+  <section style="padding-top:24px"><div class="wrap">
+    <div class="table-wrap" style="max-width:820px;margin:0 auto;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--surface)">
+      <table style="width:100%;border-collapse:collapse;font-size:14px">
+        <thead><tr style="background:var(--subtle)">
+          <th style="text-align:left;padding:16px;font-weight:600">Función</th>
+          <th style="padding:16px;font-weight:600">Free</th>
+          <th style="padding:16px;font-weight:600;color:var(--accent-hover)">Pro · $19</th>
+        </tr></thead>
+        <tbody>
+          <script>
+            const rows = [
+              ['Miembros','Hasta 5','Ilimitados'],
+              ['Dashboard, Tareas, Rocas','✓','✓'],
+              ['Scorecard / KPIs','Básico','Ilimitado'],
+              ['Chat & Canales','✓','✓'],
+              ['Reuniones en vivo','—','✓'],
+              ['CRM (contactos, deals)','1 pipeline','Ilimitado'],
+              ['Time Tracking + reportes','—','✓'],
+              ['Historial','30 días','Ilimitado'],
+              ['Integraciones','—','✓'],
+              ['Soporte','Comunidad','Prioritario'],
+            ];
+            document.write(rows.map(r=>`<tr style="border-top:1px solid var(--border-subtle)"><td style="padding:14px 16px">${r[0]}</td><td style="padding:14px 16px;text-align:center;color:var(--text-2)">${r[1]}</td><td style="padding:14px 16px;text-align:center;font-weight:500">${r[2]}</td></tr>`).join(''));
+          </script>
+        </tbody>
+      </table>
+      <div style="display:flex;gap:12px;justify-content:center;padding:24px">
+        <a class="btn btn--secondary" href="/planeos/app/pages/auth/signup.html">Empezar gratis</a>
+        <a class="btn btn--primary" href="/planeos/app/pages/auth/signup.html">Probar Pro 14 días</a>
+      </div>
+    </div>
+  </div></section>
+
+  <footer><div class="wrap footer__inner">
+    <div class="brand"><span class="brand__mark">P</span> PlanEOS</div>
+    <div>© 2026 PlanEOS · planeos.io</div>
+  </div></footer>
+</body>
+</html>
