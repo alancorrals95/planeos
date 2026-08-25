@@ -1,0 +1,15 @@
+# Configuración real — cada quien la suya
+app/config/env.js
+
+# Sistema
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Dependencias (este proyecto no usa build, pero por si acaso)
+node_modules/
+
+# Notas locales
+notas/
+scratch/
