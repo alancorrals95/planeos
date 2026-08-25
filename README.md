@@ -27,21 +27,27 @@ Bilingual (Spanish/English) throughout, light and dark themes, responsive.
 
 ## Screenshots
 
-![Hero](docs/img/hero.png)
+![Dashboard](docs/img/app-dashboard.png)
+
+**The daily view.** Your rocks with progress, your to-dos, and the scorecard —
+the three things an EOS meeting actually runs on.
 
 | | |
 |---|---|
-| ![Features](docs/img/features.png) | ![Pricing](docs/img/pricing.png) |
-| Nine modules, one place. | Plan comparison, monthly or annual. |
+| ![Scorecard](docs/img/app-scorecard.png) | ![Rocks](docs/img/app-rocks.png) |
+| **Scorecard.** Weekly KPIs against a goal, green when met and red when missed. | **Rocks.** Quarterly objectives with owner, status and progress. |
+| ![Boards](docs/img/app-boards.png) | ![Chat](docs/img/app-chat.png) |
+| **Boards.** Kanban scoped per organisation or team. | **Chat.** Channels and DMs over Supabase realtime. |
+| ![To-dos](docs/img/app-todos.png) | ![Time](docs/img/app-time.png) |
+| **To-dos.** Team and private, with due dates. | **Time tracking.** Timer per project, reportable. |
 
-![Login](docs/img/login.png)
+### Marketing site
 
-Dark and light themes throughout, Spanish and English, all without a build step.
+| | |
+|---|---|
+| ![Hero](docs/img/hero.png) | ![Pricing](docs/img/pricing.png) |
 
-> These are the marketing site and the authentication screens. The application
-> interior is not shown here because the Supabase project it was developed
-> against no longer exists — point `env.js` at a new project and run
-> `supabase/full_schema.sql` to bring it up.
+> Screenshots come from a demo organisation seeded with invented data.
 
 ## Architecture
 
